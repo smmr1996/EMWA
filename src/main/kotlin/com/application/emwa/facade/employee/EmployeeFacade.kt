@@ -1,3 +1,6 @@
+/*
+ * Copyright 2023 the original author or authors.
+ */
 package com.application.emwa.facade.employee
 
 import com.application.emwa.domain.employee.Employee

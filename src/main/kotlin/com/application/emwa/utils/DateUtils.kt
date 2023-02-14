@@ -1,3 +1,6 @@
+/*
+ * Copyright 2023 the original author or authors.
+ */
 package com.application.emwa.utils
 
 import org.springframework.stereotype.Component
