@@ -15,7 +15,7 @@ class EmployeeFacade(
 ) {
 
     @GetMapping(value = ["/create-employee"])
-    fun createEmployee(firstName: String, @RequestParam(defaultValue = "") middleName: String, lastName: String, dateOfBirth: String): Employee {
+    fun createEmployee(firstName: String, middleName: String?, lastName: String, dateOfBirth: String): Employee {
         validateInputs(firstName, lastName, dateOfBirth)
         return employeeService.persistEmployee(firstName, middleName, lastName, dateOfBirth)
     }

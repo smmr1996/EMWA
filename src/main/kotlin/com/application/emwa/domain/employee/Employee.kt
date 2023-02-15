@@ -8,7 +8,7 @@ import java.time.LocalDate
 data class Employee(
     val id: Long,
     val firstName: String,
-    val middleName: String? = null,
+    val middleName: String?,
     val lastName: String,
     val dateOfBirth: LocalDate
 )
