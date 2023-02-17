@@ -5,9 +5,9 @@ package com.application.emwa.service.employee
 
 import com.application.emwa.domain.employee.Employee
 import com.application.emwa.utils.DateUtils
-import org.springframework.stereotype.Component
+import org.springframework.stereotype.Service
 
-@Component
+@Service
 class EmployeeDetailsService(
     private val dateUtils: DateUtils
 ) {
