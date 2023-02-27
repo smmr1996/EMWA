@@ -14,11 +14,12 @@ class EmployeeFacade(
     private val employeeService: EmployeeService
 ) {
 
-    @GetMapping(value = ["/create-employee"])
+    @GetMapping(value = ["/employee"])
     fun createEmployee(firstName: String, middleName: String?, lastName: String, dateOfBirth: String): Employee {
         validateInputs(firstName, lastName, dateOfBirth)
         return employeeService.persistEmployee(firstName, middleName, lastName, dateOfBirth)
     }
+
 
     private fun validateInputs(firstName: String, lastName: String, dateOfBirth: String) {
         if (firstName.isBlank() || lastName.isBlank() || dateOfBirth.isBlank())

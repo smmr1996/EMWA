@@ -4,12 +4,14 @@
 package com.application.emwa.service.employee
 
 import com.application.emwa.domain.employee.Employee
+import com.application.emwa.repository.employee.EmployeeRepository
 import com.application.emwa.utils.DateUtils
 import org.springframework.stereotype.Service
 
 @Service
 class EmployeeDetailsService(
-    private val dateUtils: DateUtils
+    private val dateUtils: DateUtils,
+    private val employeeRepository: EmployeeRepository
 ) {
 
     fun createEmployee(
